@@ -25,8 +25,8 @@
         <version>1.0</version>
     </parent>
 
-    <groupId>javax.xml.registry</groupId>
-    <artifactId>javax.xml.registry-api</artifactId>
+    <groupId>jakarta.xml.registry</groupId>
+    <artifactId>jakarta.xml.registry-api</artifactId>
     <version>1.0.9-SNAPSHOT</version>
     
     <properties>
@@ -129,8 +129,9 @@
             <plugin>
                 <groupId>org.glassfish.build</groupId>
                 <artifactId>spec-version-maven-plugin</artifactId>
-                <version>1.2</version>
+                <version>1.5</version>
                 <configuration>
+                	<specMode>jakarta</specMode>
                     <spec>
                         <nonFinal>${non.final}</nonFinal>
                         <jarType>api</jarType>
@@ -287,7 +288,7 @@
                     </reporting>
                 </configuration>
             </plugin>
-            <plugin>
+<!--            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.6</version>
@@ -300,7 +301,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>
