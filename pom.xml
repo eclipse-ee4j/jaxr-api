@@ -27,7 +27,7 @@
 
     <groupId>jakarta.xml.registry</groupId>
     <artifactId>jakarta.xml.registry-api</artifactId>
-    <version>1.0.9-SNAPSHOT</version>
+    <version>1.0.9</version>
     
     <properties>
         <non.final>false</non.final>
