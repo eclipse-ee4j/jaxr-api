@@ -25,6 +25,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>jakarta.xml.registry</groupId>
     <artifactId>xml-registries-spec</artifactId>
+    <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Jakarta XML Registries Specification</name>
 
@@ -95,7 +96,7 @@
                         </goals>
                         <configuration>
                             <backend>html5</backend>
-                            <outputFile>${project.build.directory}/generated-docs/xml-registries-spec-${spec.version}.html</outputFile>
+                            <outputFile>${project.build.directory}/generated-docs/xml-registries-spec-${project.version}.html</outputFile>
                             <attributes>
                                 <doctype>book</doctype>
                                 <status>${status}</status>
@@ -118,7 +119,7 @@
                         </goals>
                         <configuration>
                             <backend>pdf</backend>
-                            <outputFile>${project.build.directory}/generated-docs/xml-registries-spec-${spec.version}.pdf</outputFile>
+                            <outputFile>${project.build.directory}/generated-docs/xml-registries-spec-${project.version}.pdf</outputFile>
                             <attributes>
                                 <pdf-stylesdir>${project.basedir}/src/main/theme</pdf-stylesdir>
                                 <pdf-style>jakartaee</pdf-style>
