@@ -29,7 +29,7 @@
     <groupId>jakarta.xml.registry</groupId>
     <artifactId>xml.registry-api-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.10</version>
+    <version>1.0.10-SNAPSHOT</version>
     <name>jaxr-api</name>
     <description>Jakarta XML Registries API: Eclipse Project for Stable EE4J APIs</description>
     <url>https://github.com/eclipse-ee4j/jaxr-api</url>
