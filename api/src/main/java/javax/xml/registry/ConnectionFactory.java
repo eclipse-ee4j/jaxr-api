@@ -189,7 +189,12 @@ public abstract class ConnectionFactory {
             File f=new File( configFile );
             if( f.exists()) {
                 Properties props=new Properties();
-                props.load( new FileInputStream(f));
+                FileInputStream pis = new FileInputStream(f);
+                try {
+                    props.load(pis);
+                } finally {
+                    pis.close();
+                }
                 String factoryClassName = props.getProperty(factoryId);
                 return newInstance(factoryClassName, classLoader);
             }
